@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../fonts/century-gothic.ttf');
+}
+
+body {
+  font-family: 'Century Gothic';
+  padding-bottom: 180px;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 2px 2px 2px #dedede;
+  a {
+    img {
+      margin-top: 5px;
+    }
+  }
+}
+
+// Header
+.header {
+  text-align: center;
+  background-image: url('../img/five-light.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  h1 {
+    font-size: 44px;
+    color: #262626;
+    padding-top: 60px;
+  }
+}
+
+// Header media queries
+@media (min-width: 2400px) {
+  .header {
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .header {
+    h1 {
+      font-size: 35px;
+    }
+  }
+}
+
+// Sub-header
+.sub-header {
+  text-align: center;
+  width: 100%;
+  p {
+    width: 400px;
+    margin: 0 auto 60px auto;
+    font-size: 18px;
+  }
+}
+
+// Sub-header media queries
+@media (min-width: 2400px) {
+  .sub-header {
+    p {
+      font-size: 35px;
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .sub-header {
+    p {
+      width: 300px;
+    }
+  }
+}
+
+// Information rows
+.info-row {
+  width: 95%;
+  margin: 50px auto;
+  img {
+    max-width: 100%;
+  }
+  h2 {
+    margin-left: 5%;
+    text-align: center;
+    color: #fff;
+    background-color: #003D71;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 8px;
+  }
+  h3, p {
+    width: 80%;
+    margin-left: 5%;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 25px;
+  }
+}
+
+// Info row media queries
+@media (min-width: 1600px) {
+  .info-row {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1980px) {
+  .info-row {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 2400px) {
+  .info-row {
+    width: 70%;
+    h3 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1285px) {
+  .info-row {
+    width: 98%;
+    h2 {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      padding-top: 4px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1075px) {
+  .info-row {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .info-row {
+    text-align: center;
+    h2, h3, p {
+      margin: 0 auto;
+    }
+    h2 {
+      margin-top: -25px;
+    }
+    h3, p {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .info-row {
+    width: 99%;
+    h3, p {
+      width: 98%;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+// Footer row
+.footer-row {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    margin-top: 40px;
+  }
+  p {
+    margin: 40px 0 60px 0;
+  }
+  a, a:visited {
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #003D71;
+    border: 1px solid #003D71;
+    border-radius: 2px;
+    padding: 20px 25px;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+// Footer row media queries
+@media (min-width: 2400px) {
+  .footer-row {
+    width: 1000px;
+    h1 {
+      font-size: 55px;
+    }
+    p {
+      font-size: 30px;
+    }
+    a {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .footer-row {
+    width: 500px;
+  }
+}
+
+@media (max-width: 530px) {
+  .footer-row {
+    width: 400px;
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-row {
+    width: 310px;
+    a {
+      font-size: 14px;
+    }
+  }
+}
